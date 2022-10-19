@@ -1,0 +1,52 @@
+package it.examples.java;
+import java . util . Scanner ;
+
+public class EsercizioCondiviso {
+	public static void main(String[] args) {
+		String username, password;
+		boolean StatoBool=false, controllo = true;
+		int id;
+		Scanner scanner = new Scanner(System.in);
+	
+  	    do {
+  	    	
+  	    	
+  	    	System.out.println("Inserisci Nome:");//input username
+  			username = scanner.nextLine();
+  			
+  	    	if(username.equals("cornelia")) { //controllo nome
+  	    
+  	    		System.out.println("Inserisci Password:");//input password
+  	    		password = scanner.nextLine();
+  	    		
+  	    	
+  	    	if(password.equals("nelly")) {  //controllo password
+  	    		System.out.println("Inserisci Controllo:");//input StatoBool
+  	    		StatoBool = scanner.nextBoolean();
+  	    		
+  	    	if(StatoBool==true) {       //controllo StatoBool
+  	    		System.out.println("Inserisci id:"); //input id
+  	    	    id = scanner.nextInt();		
+  	    	
+  	    	if(id==4) {                  //controllo id
+  	    		System.out.println("Dati utente corrispondono.");
+  	    		
+  	    	}//chiudo la condizione del id
+  	    	if(password.equals(scanner)) {
+  	    		System.out.println("Dati:"+username+"  "+password+"  "+StatoBool+"  " +id);
+  	    	}}} //chiusura 3 if
+  	    	
+  	    	System.out.println("Inserisci Controllo while:");//input controllo while
+  			controllo = scanner.nextBoolean();
+  	    	} //chiusura 1 if
+  	    	else{
+  	    		break; //esce dal ciclo
+  	    	}
+  	    	
+  	    }while(controllo=true);
+	
+	
+	
+	
+	}
+}
